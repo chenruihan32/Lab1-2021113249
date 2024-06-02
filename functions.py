@@ -101,7 +101,7 @@ def draw_graph(graph, file_name="graph.png", path=None):
     
     pos = nx.spring_layout(G)
     plt.figure(figsize=(12, 8))
-    
+ #修改文件kk   
     if path:
         edges = [(path[n], path[n + 1]) for n in range(len(path) - 1)]
         edge_colors = ["red" if edge in edges else "black" for edge in G.edges()]
